@@ -1,0 +1,1 @@
+*/15 * * * * python3 JSONtoCSV_S3_electionnight.py && python3 SampleCreatorS3_electionnight.py && python3 AnalysisS3_electionnight.py

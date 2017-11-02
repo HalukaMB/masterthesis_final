@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--the html document is completely based on the work of Michel Penke-->
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+
+    <title>Hashtagswahl</title>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bundestagswahl: Wahlvorhersage dank Twitter">
+    <meta name="twitter:description" content="Kann Twitter vorhersagen, wer der nächste Kanzler wird?">
+    <meta name="twitter:url" content="URL">
+    <meta name="twitter:image" content="/vorschaubild.jpg">
+
+    <!-- Facebook / Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Bundestagswahl">
+    <meta property="og:title" content="Wahlvorhersage dank Twitter">
+    <meta property="og:description" content="Kann Twitter vorhersagen, wer der nächste Kanzler wird?">
+    <meta property="og:url" content="URL">
+    <meta property="og:image" content="/vorschaubild.jpg">
+
+    <!-- General SEO -->
+    <meta name="author" content="Haluka Maier-Borst">
+    <meta name="title" content="Bundestagswahl: Wahlvorhersage dank Twitter">
+    <meta name="description" content="Kann Twitter vorhersagen, wer der nächste Kanzler wird?">
+    <meta name="keywords" content="Bundestagswahl, Wahlvorhersage, Twitter, Bot, Tweet, Analyse">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <article>
+
+        <header>
+
+            <div class="block">
+
+                <h1 class="headline" style="margin-bottom:0;">Hashtagswahl</h1>
+                <h3 class="subline" style="padding-right: 0px;">Tweets statt Wahlzettel // Tweets not Votes</h3>
+
+            </div>
+            <div class="teaserbox">
+            <p class="teaser1"><em>Kann Twitter vorhersagen, wer Kanzler wird? Und wie sähe das Parlament aus, wenn Bots das Sagen hätten? </em></p>
+        <p class="teaser2"><em>Can Twitter predict the next chancellor? And what would the Bundestag look like, if bots had their say? </em></p>
+        </div>
+
+            <div class="social">
+                <a target="_blank" href="https://twitter.com/intent/tweet?original_referer=http://www.hashtagswahl.de&ref_src=twsrc%5Etfw&text=Twitter als Wahllokal. Wird Merkel oder Schulz der nächste Kanzler?&url=http://www.hashtagswahl.de">
+                    <div class="twitter"><img src="twitter.png" alt="twitter"></div>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.hashtagswahl.de">
+                    <div class="facebook"><img src="facebook1.png" alt="facebook"></div>
+                </a>
+                <a target="_blank" href="whatsapp://send?text=http://www.hashtagswahl.de">
+                    <div class="whatsapp"><img src="whatsapp.png" alt="whatsapp"></div>
+                </a>
+            </div>
+
+            <img style="margin-top: 20px;" src="cover.png" alt="Vorschaubild">
+        </header>
+
+        <section>
+
+            <div class="tbox">
+                <p class="tbox-left up"><span class="ztitel">Ein Parlament für Bots</span><br><br><span id="TweetsoverallGer">XXX</span> Mal wurde in den letzten 24 Stunden über die Bundestagswahl getwittert. Damit ist Twitter ein riesiger Fluss an Informationen, der zeigt,
+                    über welche Partei gerade besonders heiß diskutiert wird. Doch das digitale Stimmungsbarometer hat einen Haken. <span id="botquotaGer">XXX</span>Prozent der heutigen Tweets kamen wahrscheinlich von Bots – oder zumindest hyperaktiven
+                    Usern. Das sind, Stand <span id="runtimeGer">XXX</span> Uhr, die neuesten Ergebnisse des Servers, der hinter der Hashtagswahl steckt und diese Zahlen alle 15 Minuten aktualisiert. Welche Partei wie oft von solchen "botähnlichen" Accounts erwähnt wird, kann man hier sehen:
+                </p>
+                <p class="tbox-right down"><span class="ztitel">A Parliament for Bots</span><br><br><span id="TweetsoverallEng">XXX</span> within 24 hours. That is how often tweets were sent out about the German election – Bundestagswahl. And this makes Twitter a constant stream
+                    of information that shows which party is in the center of political talk. But this digital opinion poll has a problem. <span id="botquotaEng">XXX</span> per cent of today’s tweets around the election likely came from bots – or extremely
+                    active users. This is the result that the server behind Hashtagswahl generated at <span id="runtimeEng">XXX</span> and which are updated every 15 minutes. How much each German party is mentioned by these 'bot-like' accounts is shown here: </p>
+            </div>
+
+
+
+
+
+            <div style="clear:both;"></div>
+            <div class="graph" id=Germanbarchart1>
+            </div>
+            <div class="tbox">
+                <p class="tbox-left up"><span class="ztitel">Und was wenn nur Menschen wählen?</span><br><br>Ein etwas anderes Bild bietet sich dagegen, wenn man die vermutlichen Bots herausrechnet. Die <span id="botloserGER">ZZZ</span> verliert <span id="botloserpercGER">ZZZ</span>Prozent, wenn man die vermutlichen Bots aktuell abzieht. Im Detail sieht das "botbereinigte" Ergebnis so aus:</p>
+                <p class="tbox-right down"><span class="ztitel">And What If Only Humans Can Vote?</span><br><br>A slightly different picture emerges, when the suspected bots are taken out of the calculation. Especially, the <span id="botloserENG">ZZZ</span> loses <span id="botloserpercENG">ZZZ</span>per cent, if you substract the suspected bots. The “botless” result looks like this in detail: </p>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="graph" id=Germanbarchart2>
+            </div>
+            <div class="tbox">
+                <p class="tbox-left up"><span class="ztitel">Ein laufendes Experiment</span><br><br>Ob diese Social Media Umfrage den künftigen Bundestag widerspiegelt? Wohl kaum. Gerade weit vor der Wahl twittern viele Nutzer wahrscheinlich nicht, um ihre Wahltendenz auszudrücken. Stattdessen
+                    geht es darum, dass ein Kandidat aussieht <a href="http://www.schleckysilberstein.com/2017/08/thermilindner-die-schonste-assoziation-des-wahlkampfs/">wie ein Thermomixvertreter</a>. Oder darum, dass ein Politiker in einem Interview besonders schlecht aussah. Oder schlichtweg, dass man sich über die aktuelle Regierung beschweren will. Andererseits
+                    zeigen Studien aus anderen Ländern, dass <a href="https://www.academia.edu/29974689/Predicting_Brexit_Classifying_Agreement_is_Better_than_Sentiment_and_Pollsters">zumindest am Wahltag Twitter</a> mitunter eine gute erste Prognose liefern kann. Ob das für die Bundestagswahl auch der Fall ist, soll darum die Hashtagswahl als Experiment klären.</p>
+                <p class="tbox-right down"><span class="ztitel">An Ongoing Experiment</span><br><br>But does this social media poll forecast the future German parliament? Probably not. Weeks before an election, it seems unlikely that users tweet about their voting preference.
+                    It is more likely that they make fun of candidates or talk about how badly some politician performed in an interview. Or maybe he or she just wants to complain about the parties currently in power. But past
+                    studies in other countries have shown that on election day, <a href="https://www.academia.edu/29974689/Predicting_Brexit_Classifying_Agreement_is_Better_than_Sentiment_and_Pollsters">Twitter can compete on a decent level</a> with actual exit polls. Whether this is true for the upcoming German election is something that this experiment of Hashtagswahl wants
+                    to explore.</p>
+            </div>
+            <div class="tbox">
+                <p class="tbox-left up"><span class="ztitel">Methodologie</span><br><br>Ein Scraper sammelt konstant alle Tweets, die einen der Spitzenkandidaten von SPD, CDU, FDP, Grüne, Linke, AfD erwähnen oder eben die Partei selbst.
+                  Zunächst wertet der Server alle Tweets aus, die zwischen 48 und 24 Stunden alt sind. Accounts, die innerhalb dieser Zeitspanne mehr als 24 Mal zur Wahl getwittert haben, werden daraufhin als Bots klassifiziert.
+                  <br><br>Anschließend wird ein Machine Learning Algorithmus mit diesem Datensatz trainiert.
+                  Der Algorithmus schaut dabei auf stylometrische Charakteristika, also ob Bots kürzere oder längere Worte, mehr oder weniger Ausrufezeichen nutzen etc. und baut darauf basierend ein Modell.
+                  Hat der Algorithmus beim Trainingsdatensatz eine Genauigkeit von mehr als 80 Prozent, wird er genutzt, um für die letzten 24 Stunden Tweets als Bot oder Nicht-Bot zu klassifizieren.
+                  Ist die Genauigkeit niedriger, wird auch für die letzten 24 Stunden nach der Häufigkeit klassifiziert mit der Accounts Tweets zur Wahl abgesetzt haben. <br><br>Hinzu kommt, dass für jeden Tweet geschaut wird, welche Partei erwähnt wird. Das Ergebnis wird entsprechend verrechnet.
+                  Am Ende entstehen aus diesen Berechungen Grafiken, die die Wahl der "normalen User" und die Wahl der Bots zeigen.<br><br>
+                <i><b>Warum wird nur nach Hashtags gegangen, ohne einzuordnen, ob über eine Partei positiv oder negativ gesprochen wird?</i></b><br>
+                Eine Erwähnung ist nicht gleichzusetzen mit einer Stimme für jemanden. Denn es ist gut möglich, dass jemand über die CDU twittert und sich furchtbar aufregt. Das Problem: Alle Ansätze im Bereich Sentiment Analysis, die ich im Vorfeld getestet habe, funktionierten nicht gut genug.
+                Weder das Einordnen von Tweets in positiv und negativ basierend auf einem Lexikon, noch stylometrische Ansätze haben funktioniert. Und komplexere Ansätze mit Sentiment Analysis Algorithmen wie Word2Vec waren zu langsam für das Verarbeiten von mehreren Zehntausend Tweets in wenigen Minuten.
+                Die Hoffnung ist daher, dass am Wahltag selbst die meisten User mehr über ihre Entscheidung twittern anstatt sich über den politischen Gegner aufzuregen.
+                <br><br><b><i>Wieso ist die Uhrzeit der letzten Berechnung manchmal so alt?</i></b><br>
+                Normalerweise sollte der Server alle 15 Minuten das Ergebnis für die Tweets neu berechnen. Bei großen Mengen an Tweets kann der Server unter der Last zusammenbrechen. Derzeit arbeite ich daran, dieses Problem zu reparieren.
+                Python-Cracks dürfen mir gerne Vorschläge für Verbesserungen an <a href="https://twitter.com/HalukaMB"><i>@HalukaMB</i></a> schicken.
+              </p>
+                <p class="tbox-right down"><span class="ztitel">Methodology</span><br><br>A scraper constantly gathers tweets that mention either one of the six parties’ (SPD, CDU, FDP, Grüne, Linke, AfD) figureheads or the party itself.
+                  First, the server analyses all tweets that were posted 48 to 24 hours ago. Accounts that have tweeted about the election more than 24 times within this timespan are classified as bots.
+                  <br><br>As a next step, a machine-learning algorithm is trained on this dataset. The algortihm looks at stylometric characteristics
+                  such as whether bots use longer or shorter words, more or less exclamation marks than „normal“ accounts and then builds up its classification model based on these stylometrics. If the algorithm can get an accuracy of 80 per cent on the training data set with this model,
+                   it is used for the bot-or-not classification for tweets from the last 24 hours. Otherwise, tweets from the last 24 hours are also classified purely by the frequency with which accounts have tweeted about the election and the aforementioned parties. <br><br>
+                   After this, for each tweet it is checked whether the tweet mentions one of the parties and if so the tweet is counted for this party. Finally, based on these numbers and calculations, graphics are created that should show the vote of “normal” users and the vote of “bots”.
+                  <br><br><b><i>Why do you only look for hashtags without trying to assess whether the user is talking positively or negatively about the party? </i></b><br>
+                  A mention of someone is not necessarily the same as a vote in favour of this person.
+                  It might well be that somebody tweets about the CDU because he dislikes its politics. The issue is: all approaches of sentiment analysis that I have tried and used in order to tackle this problem were not good enough.
+                  Lexicon and stylometric based approaches that should classify tweets as positive or negative had an accuracy that was close to 50 per cent and hence basically a coin toss. And other more complex approaches like the use of specific Python libraries such as Word2Vec were too slow to process ten thousands of tweets within a few minutes.
+                  However, hopefully on election day most users will rather tweet about their choice rather than rage about their political opponent.
+                  <br><br><b><i>Why is the time of the last result sometimes so old?</i></b><br>
+                  Ideally the server should update the result every 15 minutes. However, sometimes the server struggles with processing large numbers of tweets every now and then. I am currently working on different fixes and workarounds for the problem.
+                  But good Python devs are more than welcome to suggest their ideas for improvements to me <a href="https://twitter.com/HalukaMB"><i>@HalukaMB</i></a>. </p>
+            </div>
+            <div class="social-unten">
+                <a target="_blank" href="https://twitter.com/intent/tweet?original_referer=http://www.hashtagswahl.de&ref_src=twsrc%5Etfw&text=Twitter als Wahllokal. Wird Merkel oder Schulz der nächste Kanzler?&url=http://www.hashtagswahl.de">
+                    <div class="twitter"><img src="twitter.png" alt="twitter"></div>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.hashtagswahl.de">
+                    <div class="facebook"><img src="facebook1.png" alt="facebook"></div>
+                </a>
+                <a target="_blank" href="whatsapp://send?text=http://www.hashtagswahl.de">
+                    <div class="whatsapp"><img src="whatsapp.png" alt="whatsapp"></div>
+                </a>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div class="footer">
+                <p style="line-height: 0.1em;">Author: <a href="https://twitter.com/HalukaMB">Haluka Maier-Borst</a></p>
+                <p style="line-height: 0.1em;">Cardiff University</p>
+                <p style="line-height: 0.1em;">Credits also to: </p>
+                <p style="line-height: 0.1em;">Michel Penke and</p>
+                <p style="line-height: 0.1em;">Ændrew Rininsland</p>
+
+            </div>
+
+
+        </footer>
+
+    </article>
+
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="BaseJS.js"></script>
+
+
+    <script src="GermanbarchartBOT.js"></script>
+        <script src="GermanbarchartNORMAL.js"></script>
+
+</body>
+
+</html>
