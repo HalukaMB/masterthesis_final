@@ -1,7 +1,7 @@
-party,tweetsoverall,normaltweetscount,bottweetscount,normaltweetsML,bottweetsML,color
-'CDU', 1086, 917, 169, 957, 129, '#000000'
-'SPD', 446, 370, 76, 394, 52, '#E2001A'
-'FDP', 998, 875, 123, 871, 127, '#FFD600'
-'GRUENE', 565, 457, 108, 494, 71, '#64A12D'
-'AFD', 2017, 1558, 459, 1758, 259, '#009DE0'
-'LINKE', 343, 294, 49, 307, 36, '#81007F'
+party,tweetsoverall,normaltweetscount,bottweetscount,normaltweetsML,bottweetsML,normaltweetsdual,bottweetsdual,color
+'CDU', 12623, 7032, 5591, 4906, 7717, 2926, 9697, '#000000'
+'SPD', 10622, 6253, 4369, 4398, 6224, 3013, 7609, '#E2001A'
+'FDP', 4716, 3065, 1651, 1567, 3149, 1224, 3492, '#FFD600'
+'GRUENE', 2644, 1729, 915, 993, 1651, 725, 1919, '#64A12D'
+'AFD', 30969, 17905, 13064, 11573, 19396, 7659, 23310, '#009DE0'
+'LINKE', 3959, 2325, 1634, 1606, 2353, 1122, 2837, '#81007F'
