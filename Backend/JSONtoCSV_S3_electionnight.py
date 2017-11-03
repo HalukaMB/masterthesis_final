@@ -1,3 +1,5 @@
+#This script is based on
+#http://stats.seandolinar.com/collecting-twitter-data-converting-twitter-json-to-csv-possible-errors/
 import boto
 import sys, os
 from boto.s3.key import Key
@@ -41,8 +43,7 @@ day=(str(localtime))
 csv_out1 = io.StringIO()
 csv_out2 = io.StringIO()
 
-
-
+#again all boto s3 code is based on this https://stackoverflow.com/questions/15085864/how-to-upload-a-file-to-directory-in-s3-bucket-using-boto
 s3 = boto3.resource('s3', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
 bucket = s3.Bucket('jsonraw')
 # Iterates through all the objects in the bucket
@@ -205,6 +206,7 @@ for obj in bucket.objects.all():
 
 #stores the two created csv files with all tweets from either
 #last 24hours or 24 to 48hours
+#in the live application a different bucket-name is used: "jsontocsv"
 bucket_name2="jsontocsv2"
 s3_resource = boto3.resource('s3', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
 s3_resource.Object(bucket_name2, 'Last24.csv').put(Body=csv_out1.getvalue())

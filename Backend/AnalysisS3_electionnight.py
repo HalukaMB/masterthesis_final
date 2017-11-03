@@ -20,6 +20,8 @@ AWS_SECRET_ACCESS_KEY = _credentials.AWS_SECRET_ACCESS_KEY
 
 bucket_name = 'jsontocsv2'
 
+#the code for accessing s3 stems from https://stackoverflow.com/questions/15085864/how-to-upload-a-file-to-directory-in-s3-bucket-using-boto
+#and https://stackoverflow.com/questions/30818341/how-to-read-a-csv-file-from-an-s3-bucket-using-pandas-in-python
 #connecting to s3 and loading the csv with the tweets from the last 24 hours
 conn = boto.connect_s3(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY)
 s3 = boto3.resource('s3', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
@@ -70,7 +72,7 @@ for cell in data["user_id"]:
     #if the current cell is not the same as the previously stored IDnor
     #and the counter is at 1, the ID is appended to the list of normal accounts
     if cell != IDbot:
-        
+
             #the stored ID is changed to the cell-ID and counter resetted to 1
             IDbot=cell
             counter=1

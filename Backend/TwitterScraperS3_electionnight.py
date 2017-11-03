@@ -1,3 +1,4 @@
+#this is the link to the base of the code http://stats.seandolinar.com/collecting-twitter-data-using-a-python-stream-listener/
 #importing the tweepy library and its modules for listening to Twitter streams
 from tweepy import Stream
 from tweepy import OAuthHandler
@@ -62,6 +63,7 @@ class listener(StreamListener):
         #Here the code deviates from the original code as closed objects cannot be sent to S3 buckets
 
         #Here the object is sent as a json object to the S3 bucket
+        #reference https://stackoverflow.com/questions/15085864/how-to-upload-a-file-to-directory-in-s3-bucket-using-boto
         s3_resource = boto3.resource('s3', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
         bucket_name2="jsonraw"
         filename=('raw_tweets_{}.json').format(localtime)

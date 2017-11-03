@@ -19,6 +19,10 @@ import pandas as pd
 
 #for some reason boto3 alone would not help in storing machine learning models
 #therefore, also boto is used
+#again, to prevent the replication from interfering with the live application
+# a different bucket is used with "jsontocsv2" instead of "jsontocsv"
+#the code for accessing s3 stems from https://stackoverflow.com/questions/15085864/how-to-upload-a-file-to-directory-in-s3-bucket-using-boto
+#and https://stackoverflow.com/questions/30818341/how-to-read-a-csv-file-from-an-s3-bucket-using-pandas-in-python
 from boto.s3.key import Key
 conn = boto.connect_s3(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY)
 s3 = boto3.resource('s3', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
@@ -438,6 +442,7 @@ from sklearn import metrics
 y_test=[]
 pred_test=[]
 #this is the function for cross-validation
+#source https://github.com/scikit-learn/scikit-learn/issues/1696
 def kfold(clr,X,y,folds=10):
 
     localtime = datetime.now().strftime("%Y-%b-%d--%H-%M-%S")
